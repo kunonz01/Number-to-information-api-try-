@@ -1,4 +1,4 @@
-import asyncio
+mport asyncio
 import re
 import os
 import json
@@ -162,7 +162,7 @@ async def number_info(request):
         if not number:
             return j({"status": False, "error": "number missing"})
 
-        number = "91" + number
+        number = "" + number
 
         messages, text = await fetch_all_pages(number)
 
