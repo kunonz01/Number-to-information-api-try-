@@ -162,7 +162,7 @@ async def number_info(request):
         if not number:
             return j({"status": False, "error": "number missing"})
 
-        number = "" + number
+        number = "91" + number
 
         messages, text = await fetch_all_pages(number)
 
